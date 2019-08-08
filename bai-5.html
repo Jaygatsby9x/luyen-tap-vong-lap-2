@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let pv = Number(prompt("so tien ban dau"));
+    let k = 0.02; //lai suat
+    let n = Number(prompt("so thang"));
+    let fi = 0;
+    for (let i = 1; i <= n; i++) {
+        fi = pv * k;// lai suat sau 1 thang
+        pv = pv + parseInt(fi); // so tien sau 1 thang
+
+    }
+    document.write("So tien:" + pv + ", Lai: " + parseInt(fi) );
+
+</script>
+</body>
+</html>
